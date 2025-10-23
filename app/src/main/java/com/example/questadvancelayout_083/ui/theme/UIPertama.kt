@@ -69,6 +69,9 @@ fun ActifitasPertama(modifier: Modifier){
                             color = Color.Yellow,
                             modifier = Modifier.padding(top=10.dp)
                         )
+                        Box(
+
+                        )
                 }
     }
     }

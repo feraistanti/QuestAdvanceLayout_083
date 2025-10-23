@@ -46,6 +46,9 @@ fun ActifitasPertama(modifier: Modifier){
                         contentDescription = null,
                         modifier = Modifier.size(100.dp).padding(5.dpp)
                     )
+                    Spacer(modifier = Modifier.width(30.dp))
+                    column()
+                        Text()
                 }
     }
     }

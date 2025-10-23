@@ -73,7 +73,11 @@ fun ActifitasPertama(modifier: Modifier){
                         Box(
                             modifier = Modifier
                                 .fillMaxSize()
-                        )
+                        ){
+                            text(
+                                stringResource(R.string.copy),
+                            )
+                        }
                 }
     }
     }

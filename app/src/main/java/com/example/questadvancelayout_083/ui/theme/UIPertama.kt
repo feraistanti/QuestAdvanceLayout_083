@@ -3,6 +3,7 @@ package com.example.questadvancelayout_083.ui.theme
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -70,7 +71,8 @@ fun ActifitasPertama(modifier: Modifier){
                             modifier = Modifier.padding(top=10.dp)
                         )
                         Box(
-
+                            modifier = Modifier
+                                .fillMaxSize()
                         )
                 }
     }

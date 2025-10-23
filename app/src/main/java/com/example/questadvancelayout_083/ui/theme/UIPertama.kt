@@ -6,4 +6,3 @@ import androidx.compose.runtime.Composable
 fun ActifitasPertama(modifier: Modifier){
     Column(modifier =)
 }
-

@@ -15,7 +15,11 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.example.questadvancelayout_083.ui.theme.logo_umy
 
+
+private val Int.dpp: Any
+private val Unit.logo_umy: Int
 
 @Composable
 fun ActifitasPertama(modifier: Modifier){
@@ -39,6 +43,8 @@ fun ActifitasPertama(modifier: Modifier){
                     val gambar = painterResource( R.drawable.logo_umy)
                     image(
                         painter = gambar,
+                        contentDescription = null,
+                        modifier = Modifier.size(100.dp).padding(5.dpp)
                     )
                 }
     }

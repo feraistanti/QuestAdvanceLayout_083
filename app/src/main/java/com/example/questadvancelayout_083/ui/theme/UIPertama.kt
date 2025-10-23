@@ -76,6 +76,7 @@ fun ActifitasPertama(modifier: Modifier){
                         ){
                             text(
                                 stringResource(R.string.copy),
+                                modifier = Modifier
                             )
                         }
                 }

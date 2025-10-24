@@ -138,9 +138,8 @@ fun ActifitasPertama(modifier: Modifier){
             )
             Spacer(modifier = Modifier.width(30.dp))
             Column {
-
-}
-
+                Text(
+                    "Isi Nama",
 
 
 

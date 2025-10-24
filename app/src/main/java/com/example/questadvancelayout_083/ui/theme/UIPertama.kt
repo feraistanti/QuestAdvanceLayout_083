@@ -153,6 +153,7 @@ fun ActifitasPertama(modifier: Modifier){
                 )
                 Text(
                     "Isi Alamat",
+                    fontSize = 20.sp,
 
 
 

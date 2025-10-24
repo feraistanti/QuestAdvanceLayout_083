@@ -149,3 +149,15 @@ fun ActifitasPertama(modifier: Modifier){
                     "Isi No Handphone",
                     fontSize = 20.sp,
                     color = Color.White,
+                    modifier = Modifier.padding(top=10.dp)
+
+}
+
+
+
+
+
+
+
+
+

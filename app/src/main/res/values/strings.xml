@@ -5,4 +5,7 @@
     <string name="nama">Bambang Sumantri</string>
     <string name="alamat">Turi, Sleman</string>
     <string name="copy">copyright</string>
+    <string name="placeholder_nama">Fera</string>
+    <string name="placeholder_notelp">082178623644</string>
+    <string name="placeholder_alamat">Palembang</string>
 </resources>

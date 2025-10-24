@@ -29,28 +29,28 @@ import com.example.questadvancelayout_083.R
 
 
 @Composable
-fun ActifitasPertama(modifier: Modifier) {
+fun ActifitasPertama(modifier: Modifier = Modifier) {
     Column(
         modifier = modifier
             .padding(top = 100.dp)
-            .fillMaxWidth(),
+            .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            stringResource(R.string.prodi),
+            text = stringResource(R.string.prodi),
             fontSize = 35.sp,
             fontWeight = FontWeight.Bold
         )
         Text(
-            stringResource(R.string.univ),
+            text = stringResource(R.string.univ),
             fontSize = 22.sp
         )
         Spacer(modifier = Modifier.height(25.dp))
 
-        // --- Kartu 1 ---
+        // --- Card 1 ---
         Card(
             modifier = Modifier
-                .fillMaxWidth()
+                .fillMaxWidth(1f)
                 .padding(all = 12.dp),
             colors = CardDefaults.cardColors(
                 containerColor = Color.DarkGray
@@ -68,45 +68,35 @@ fun ActifitasPertama(modifier: Modifier) {
                 Spacer(modifier = Modifier.width(30.dp))
                 Column {
                     Text(
-                        stringResource(R.string.nama),
+                        text = stringResource(R.string.nama),
                         fontSize = 30.sp,
                         fontFamily = FontFamily.Cursive,
                         color = Color.White,
                         modifier = Modifier.padding(top = 15.dp)
                     )
                     Text(
-                        stringResource(R.string.alamat),
+                        text = stringResource(R.string.alamat),
                         fontSize = 20.sp,
                         color = Color.Yellow,
                         modifier = Modifier.padding(top = 10.dp)
                     )
-                    Box(
-                        modifier = Modifier.fillMaxSize()
-                    ) {
-                        Text(
-                            stringResource(R.string.copy),
-                            modifier = Modifier
-                                .align(Alignment.BottomCenter)
-                                .padding(bottom = 50.dp)
-                        )
-                    }
                 }
             }
         }
 
-//card2
+        // --- Card 2 (Biru) ---
         Card(
             modifier = Modifier
-                .fillMaxWidth()
-                .padding(all = 12.dp),
+                .fillMaxWidth(1f)
+                .padding(horizontal = 12.dp, vertical = 8.dp),
             colors = CardDefaults.cardColors(
-                containerColor = Color.Blue
+                containerColor = Color(0xFF2196F3)
             )
         ) {
-            Row {
-                val gambar = painterResource(R.drawable.logo_umy)
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                val logoBiru = painterResource(R.drawable.logo_umy)
                 Image(
-                    painter = gambar,
+                    painter = logoBiru,
                     contentDescription = null,
                     modifier = Modifier
                         .size(100.dp)
@@ -115,41 +105,40 @@ fun ActifitasPertama(modifier: Modifier) {
                 Spacer(modifier = Modifier.width(30.dp))
                 Column {
                     Text(
-                        "Isi Nama",
-                        fontSize = 30.sp,
+                        text = stringResource(R.string.placeholder_nama),
+                        fontSize = 26.sp,
                         fontFamily = FontFamily.Cursive,
-                        color = Color.White,
-                        modifier = Modifier.padding(top = 15.dp)
+                        color = Color.White
                     )
                     Text(
-                        "Isi No Handphone",
-                        fontSize = 20.sp,
-                        color = Color.White,
-                        modifier = Modifier.padding(top = 10.dp)
-                    )
-                    Text(
-                        "Isi Alamat",
-                        fontSize = 20.sp,
+                        text = stringResource(R.string.placeholder_notelp),
+                        fontSize = 18.sp,
                         color = Color.White,
                         modifier = Modifier.padding(top = 5.dp)
+                    )
+                    Text(
+                        text = stringResource(R.string.placeholder_alamat),
+                        fontSize = 18.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 3.dp)
                     )
                 }
             }
         }
 
-//card3
+        // --- Card 3 (Hijau) ---
         Card(
             modifier = Modifier
-                .fillMaxWidth()
-                .padding(all = 12.dp),
+                .fillMaxWidth(1f)
+                .padding(horizontal = 12.dp, vertical = 8.dp),
             colors = CardDefaults.cardColors(
-                containerColor = Color.Green
+                containerColor = Color(0xFF4CAF50)
             )
         ) {
-            Row {
-                val gambar = painterResource(R.drawable.logo_umy)
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                val logoHijau = painterResource(R.drawable.logo_umy)
                 Image(
-                    painter = gambar,
+                    painter = logoHijau,
                     contentDescription = null,
                     modifier = Modifier
                         .size(100.dp)
@@ -158,26 +147,37 @@ fun ActifitasPertama(modifier: Modifier) {
                 Spacer(modifier = Modifier.width(30.dp))
                 Column {
                     Text(
-                        "Isi Nama",
-                        fontSize = 30.sp,
+                        text = stringResource(R.string.placeholder_nama),
+                        fontSize = 26.sp,
                         fontFamily = FontFamily.Cursive,
-                        color = Color.White,
-                        modifier = Modifier.padding(top = 15.dp)
+                        color = Color.White
                     )
                     Text(
-                        "Isi No Handphone",
-                        fontSize = 20.sp,
-                        color = Color.White,
-                        modifier = Modifier.padding(top = 10.dp)
-                    )
-                    Text(
-                        "Isi Alamat",
-                        fontSize = 20.sp,
+                        text = stringResource(R.string.placeholder_notelp),
+                        fontSize = 18.sp,
                         color = Color.White,
                         modifier = Modifier.padding(top = 5.dp)
                     )
+                    Text(
+                        text = stringResource(R.string.placeholder_alamat),
+                        fontSize = 18.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 3.dp)
+                    )
                 }
             }
+        }
+
+        // --- Copyright ---
+        Box(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            Text(
+                text = stringResource(R.string.copy),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 50.dp)
+            )
         }
     }
 }

@@ -111,3 +111,14 @@ fun ActifitasPertama(modifier: Modifier){
                     fontSize = 20.sp,
                     color = Color.White,
                     modifier = Modifier.padding(top=10.dp)
+                )
+                Text(
+                    "Isi Alamat",
+                    fontSize = 20.sp,
+                    color = Color.White,
+                    modifier = Modifier.padding(top=5.dp)
+                )
+            }
+        }
+    }
+

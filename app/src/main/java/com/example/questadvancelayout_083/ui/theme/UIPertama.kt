@@ -1,5 +1,7 @@
 package com.example.questadvancelayout_083.ui.theme
 
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -17,7 +19,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
-import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
@@ -25,9 +26,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.questadvancelayout_083.R
-import com.example.questadvancelayout_083.ui.theme.logo_umy
 
-private val Int.dpp: Any
 
 @Composable
 fun ActifitasPertama(modifier: Modifier){
@@ -45,14 +44,14 @@ fun ActifitasPertama(modifier: Modifier){
             .fillMaxWidth( 1f)
             .padding( all = 12.dp),
             colors = CardDefaults.cardColors(
-                ContainerColor = Color.DarkGray
+                containerColor = Color.DarkGray
             )) {
                 Row() {
                     val gambar = painterResource( R.drawable.logo_umy)
-                    image(
+                    Image(
                         painter = gambar,
                         contentDescription = null,
-                        modifier = Modifier.size(100.dp).padding(5.dpp)
+                        modifier = Modifier.size(100.dp).padding(5.dp)
                     )
                     Spacer(modifier = Modifier.width(30.dp))
                     val column = null
@@ -74,7 +73,7 @@ fun ActifitasPertama(modifier: Modifier){
                             modifier = Modifier
                                 .fillMaxSize()
                         ){
-                            text(
+                            Text(
                                 stringResource(R.string.copy),
                                 modifier = Modifier
                                     .align(Alignment.BottomCenter)
@@ -84,7 +83,19 @@ fun ActifitasPertama(modifier: Modifier){
                 }
     }
     }
-}
+
+    Card (modifier = Modifier
+        .fillMaxWidth( 1f)
+        .padding( all = 12.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = Color.Blue
+        )) {
+
+
+
+
+
+
 
 
 

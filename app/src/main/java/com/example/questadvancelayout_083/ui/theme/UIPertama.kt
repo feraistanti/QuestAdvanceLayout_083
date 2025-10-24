@@ -97,6 +97,6 @@ fun ActifitasPertama(modifier: Modifier){
                 contentDescription = null,
                 modifier = Modifier.size(100.dp).padding(5.dp)
             )
-
-
+            Spacer(modifier = Modifier.width(30.dp))
+            Column {
 

@@ -154,7 +154,13 @@ fun ActifitasPertama(modifier: Modifier){
                 Text(
                     "Isi Alamat",
                     fontSize = 20.sp,
-
+                    color = Color.White,
+                    modifier = Modifier.padding(top=5.dp)
+                )
+            }
+        }
+    }
+}
 
 
 

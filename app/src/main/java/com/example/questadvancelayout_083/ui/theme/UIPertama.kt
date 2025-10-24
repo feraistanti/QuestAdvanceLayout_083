@@ -131,8 +131,5 @@ fun ActifitasPertama(modifier: Modifier){
         )) {
         Row() {
             val gambar = painterResource( R.drawable.logo_umy)
-
-
-
-
-
+            Image(
+                painter = gambar,

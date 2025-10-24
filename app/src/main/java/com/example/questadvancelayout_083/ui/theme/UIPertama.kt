@@ -140,11 +140,5 @@ fun ActifitasPertama(modifier: Modifier){
             Column {
                 Text(
                     "Isi Nama",
-
-
-
-
-
-
-
-
+                    fontSize = 30.sp,
+                    fontFamily = FontFamily.Cursive,

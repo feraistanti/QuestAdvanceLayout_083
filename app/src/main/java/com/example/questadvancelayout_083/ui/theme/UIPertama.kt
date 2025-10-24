@@ -129,6 +129,10 @@ fun ActifitasPertama(modifier: Modifier){
         colors = CardDefaults.cardColors(
             containerColor = Color.Green
         )) {
+        Row() {
+            val gambar = painterResource( R.drawable.logo_umy)
+
+
 
 
 
